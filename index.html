@@ -1,64 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Source+Serif+4:opsz@8..60&display=swap"
+        rel="stylesheet">
     <title>Claudia Pizarro</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon-cv.png">
     <meta name="author" content="Claudia Pizarro">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<header>
-    <h1>Curriculum Vitae Mejorado</h1>
-    <img src="assets/img/01C69EA2-3A1D-4C47-A05B-03E9B53105E6.jpg" alt="Foto personal" width="150">
-<h2>Claudia Pizarro</h2></header>
-<section>
-    <h4>Resumen Personal</h4>
-    <p>Como ex tripulante de cabina, he tenido la oportunidad de viajar por numerosos países y conocer diferentes culturas.
-        Esta experiencia me ha enseñado la importancia de ser creativa y autodidacta para adaptarme a situaciones nuevas y resolver
-     problemas de manera efectiva.</p>
-    <p>Ser tripulante de cabina requiere habilidades de comunicación excepcionales y una actitud amable y servicial hacia los pasajeros.
-        No obstante, como profesional, el desarrollo de habilidades blandas, capacidad de trabajar en equipo y ser flexibles frente a
-        los cambios, nos forma como profesionales íntegros, capaces de desarrolarnos en múltiples áreas de forma exitosa.</p>
-    <p>Ser autodidacta me ha permitido aprender habilidades técnicas necesarias para tener exito en nuevos proyectos personales y profesionales.</p>
-    <p>En resumen, mi experiencia como tripulante de cabina, me ha enseñado la importancia del trabajo en equipo, ser creativa, autodidacta, proactiva y empática, habilidades que he apicado en mi vida personal y profesional.</p>
-</section>
-<section>
-    <h4>Datos Personales</h4>
-    <ul> <li>Nombre: Claudia Carolina Pizarro Larenas.</li>
-        <li>Fecha de Nacimiento: 24 de Diciembre de 1983</li>
-        <li>Lugar de Nacimiento: Santiago de Chile.</li>
-        <li>Teléfono de Contacto: +569 733 00 755</li>
-        <li>Correo electrónico: claudia.cpizarrol@gmail.com</li>
-    </ul>
-</section>
-<section><h4>Formación Académica</h4>
-<ol><li>Educación Básica: Colegio Inglés Isaac Newton.</li>
-<li>Educación Media: Colegio Tantauco.</li>
-<li>Educación Superor: <ul><li>Pontificia Universidad Católica de Valparaiso: Ingeniería Civil Química (año 2002, 2 semestres)</li>
-<li>Universidad Andrés Bello (año 2003, 6 semestres)</li>
-</ul></li>
-</ol>
-</section>
-<section><h4>Experiencia Laboral</h4>
-<ul><li><h5>2007-2018: LATAM AIRLINES</h5>
-    <article>Me desempeñé como Tripulante de Cabina dentro de la ruta nacional durante 8 años, desarrolando habilidades para trabajar bajo presión, 
-        comunicación efectiva, dar solución a problemas inesperados con mínimos recursos y la flexibilidad a los cambios. Posterios a la ruta nacional, los últimos
-    3 años, volé la ruta internacional, teniendo a cargo las ventas a bordo Duty Free.</article>
-    <li><h5>2019: INMOBILIARIA ACTUAL</h5>
-        <article>Durante el primer semestre estuve en la sala de ventas de proyecto inmobiliario en la comuna de Ñuñoa, teniendo como principal objetivo 
-            la venta de departamentos en verde, orientando a los clidentes durante todo el proceso de compra.
-        </article></li>
-    <li><h5>2020: TRABAJO INDEPENDIENTE</h5>
-        <article>Con la llegada de la pandemia y el cese de la relación laboral que tenía, me desarrolle de forma independiente. Los conocimientos que adquirí en ventas y mi creatividad innata, empecé un emprenmdimiento de terrarios y plantas.
-            Ser autodidacta y la capacidad de adaptarme a cambios, fue el punto clave para prosperar y tener éxito en dicho proyecto.
-        </article></li>
-    </ul></section>
-<section><h4>Reconocimientos</h4>
-<p>En el año 2009 fui reconocida como "Lider de Servicio", premio que entrega la compañía a un tripulante de cabina que se destaca por su excelencia y prefesionalismo, tanto con pasajeros como con sus compañeros de trabajo.</p></section>
-<footer><h6>Enlaces</h6>
-<a href="https://www.instagram.com/pizarro_claudia/"><img src="assets/img/logo-instagram.jpg" width="50"></a>
-<a href="https://www.github.com/ClaudiaPizarroL/"><img src="assets/img/logo-github.png" width="50"></a>
-</footer>
+
+    <!--Navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#datos">Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacion">Formación Académica</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#experiencia" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Experiencia Laboral
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#latam">LATAM Airline</a></li>
+                            <li><a class="dropdown-item" href="#actual">Inmobiliaria Actual</a></li>
+                            <li><a class="dropdown-item" href="#independiente">Trabajo Independiente</a></li>
+                            <li><a class="dropdown-item" href="#reconocimientos">Reconocimientos</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Header, incluye foto y resumen personal en 2 columnas-->
+    <header>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-5 col-xs-12">
+                    <img src="assets/img/01C69EA2-3A1D-4C47-A05B-03E9B53105E6.jpg" alt="Foto personal" width="302rem"
+                        id="foto-perfil">
+
+                </div>
+                <div class="col-lg-7 col-xs-12">
+                    <h1 class="display-5 mt-3 mb-0 ">Claudia Pizarro</h1>
+                    <div id="resumen-personal">
+                        <h4>Resumen Personal</h4>
+                        <p>Como ex tripulante de cabina, he tenido la oportunidad de viajar por numerosos países y
+                            conocer diferentes
+                            culturas.
+                            Esta experiencia me ha enseñado la importancia de ser creativa y autodidacta para adaptarme
+                            a situaciones
+                            nuevas y resolver
+                            problemas de manera efectiva.</p>
+                        <p>Ser tripulante de cabina requiere habilidades de comunicación excepcionales y una actitud
+                            amable y servicial
+                            hacia los pasajeros.
+                            No obstante, como profesional, el desarrollo de habilidades blandas, capacidad de trabajar
+                            en equipo y ser
+                            flexibles frente a
+                            los cambios, nos forma como profesionales íntegros, capaces de desarrolarnos en múltiples
+                            áreas de forma
+                            exitosa.</p>
+                        <p>Ser autodidacta me ha permitido aprender habilidades técnicas necesarias para tener exito en
+                            nuevos proyectos
+                            personales y profesionales.</p>
+                        <p>En resumen, mi experiencia como tripulante de cabina, me ha enseñado la importancia del
+                            trabajo en equipo,
+                            ser creativa, autodidacta, proactiva y empática; habilidades que he apicado en mi vida
+                            personal y
+                            profesional.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--Datos Personales, Formacion academica y experiencia laboral, en 3 tarjetas-->
+    <section class="row my-4 mx-4 row-col-5 row-col-md-7 g-2">
+
+        <div class="container-fluid text-start">
+            <div class="row align-items-start">
+                <div class="col-5">
+                    <!--Tarjeta con Datos personales-->
+                    <div class="card border-secondary mb-3" style="max-width: 60rem;">
+                        <div class="card-header fw-bold" id="datos">Datos Personales</div>
+                        <div class="card-body text-secondary my-1">
+                            <ul>
+                                <li>Nombre: Claudia Carolina Pizarro Larenas.</li>
+                                <li>Fecha de Nacimiento: 24 de Diciembre de 1983</li>
+                                <li>Lugar de Nacimiento: Santiago de Chile.</li>
+                                <li>Teléfono de Contacto: +569 733 00 755</li>
+                                <li>Correo electrónico: claudia.cpizarrol@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Tarjeta con Formacion academica-->
+                    <div class="card border-secondary mb-3" style="max-width: 60rem;">
+                        <div class="card-header fw-bold" id="formacion">Formación Académica</div>
+                        <div class="card-body text-secondary">
+                            <ol>
+                                <li>Educación Básica: Colegio Inglés Isaac Newton.</li>
+                                <li>Educación Media: Colegio Tantauco.</li>
+                                <li>Educación Superor: <ul>
+                                        <li>Pontificia Universidad Católica de Valparaiso: Ingeniería Civil Química (año
+                                            2002, 2 semestres)
+                                        </li>
+                                        <li>Universidad Andrés Bello (año 2003, 6 semestres)</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--Tarjeta con informacion laboral-->
+                <div class="col-7">
+                    <div class="card border-secondary mb-1" style="max-width: 120rem;">
+                        <div class="card-header fw-bold">Experiencia Laboral</div>
+                        <div class="card-body text-secondary" id="experiencia">
+                            <ul class="my-0">
+                                <li>
+                                    <p id="latam">2007-2018: LATAM AIRLINES</p>
+                                    <p>Me desempeñé como Tripulante de Cabina dentro de la ruta nacional durante 8
+                                        años, desarrolando
+                                        habilidades para trabajar bajo presión,
+                                        comunicación efectiva, dar solución a problemas inesperados con mínimos recursos
+                                        y la flexibilidad a
+                                        los cambios. Posterios a la ruta nacional, los últimos
+                                        3 años, volé la ruta internacional, teniendo a cargo las ventas a bordo Duty
+                                        Free.</p>
+                                <li>
+                                    <p id="actual">2019: INMOBILIARIA ACTUAL</p>
+                                    <p>Durante el primer semestre estuve en la sala de ventas de proyecto
+                                        inmobiliario en la comuna de
+                                        Ñuñoa, teniendo como principal objetivo
+                                        la venta de departamentos en verde, orientando a los clidentes durante todo el
+                                        proceso de compra.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p id="independiente">2020: TRABAJO INDEPENDIENTE</p>
+                                    <p>Con la llegada de la pandemia y el cese de la relación laboral que tenía,
+                                        me desarrolle de
+                                        forma independiente. Los conocimientos que adquirí en ventas y mi creatividad
+                                        innata, empecé un
+                                        emprenmdimiento de terrarios y plantas.
+                                        Ser autodidacta y la capacidad de adaptarme a cambios, fue el punto clave para
+                                        prosperar y tener
+                                        éxito en dicho proyecto.
+                                    </p>
+                                    <!--Incorpora popover con informacion de reconocimientos-->
+                                    <button type="button" class="btn btn-secondary" id="reconocimientos"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                        data-bs-content="En el año 2009 fui reconocida como Lider de Servicio, premio que entrega la compañía a un tripulante de
+                                    cabina que se destaca por su excelencia y prefesionalismo, tanto con pasajeros como con sus compañeros de
+                                    trabajo.">
+                                        Reconocimientos
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Seccion con formulario para enviar preguntas y carrusel de fotos laborales-->
+    <section class="container-fluid row mt-4 mb-0 mx-0 row-col-5 row-col-md-7 g-2" id="form-carousel">
+        <div class="container-fluid text-start">
+            <div class="row align-items-start">
+                <div class="col-5">
+                    <!--Formulario usando bootstrap, contiene 1 imput y textarea de 5 lineas.-->
+                    <form class="pb-5">
+                        <div class="my-3">
+                            <label for="exampleInputName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <!--Boton con tooltip-->
+                        <button type="submit" class="btn btn-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Presiona para enviar a tu mensaje">
+                            Enviar</button>
+                    </form>
+
+
+                </div>
+                <div class="col-7 my-3">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/LAN.jpg" class="d-block w-100" alt="Avión LATAM">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>LATAM</h5>
+                              <p>2007-2018 Tripulante de Cabina.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/actual_01.webp" class="d-block w-100" alt="Inmobiliaria Actual">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Inmobiliaria Actual</h5>
+                              <p>Primer semestre 2019 Ejecutiva de Ventas.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/terrarios.jpg" class="d-block w-100" alt="Terrarios">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Desde 2020 Desarrollo de Proyectos Independientes
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid m-0 row row-cols-1 row-cols-md-2 g-2 py-3 text-center">
+        <div class="h2 d-md-block pt-3 pb-3">Enlaces</div>
+        <section>
+            <a href="https://www.instagram.com/pizarro_claudia/"><img src="assets/img/5ecec6ef73e4440004f09e75.png" width="85"></a>
+            <a href="https://www.github.com/ClaudiaPizarroL/"><img src="assets/img/logo-github.png" width="60"></a>    
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

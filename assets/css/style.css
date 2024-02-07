@@ -1,0 +1,59 @@
+body {
+font-family: 'Cinzel', serif;
+font-family: 'Source Serif 4', serif;
+}
+
+nav {
+    background-color: #ebc9bb;
+}
+
+header {
+    background-color: #f1f1f1;
+    height: 25rem;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+}
+
+.col-lg-5 {
+    background-color: #ebc9bb;
+    margin-top: 0.6rem;
+    margin-right: 3rem;
+    margin-left: 1.5rem;
+    text-align: center;
+    width: 25rem;
+    height: 20rem;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+}
+
+#resumen-personal {
+    font-size: small;
+    text-align: justify;
+}
+
+.card-header {
+    font-family: 'Cinzel', serif;
+    background-color: #ebc9bb;
+}
+
+#experiencia {
+    font-size: small;
+    text-align: justify;
+}
+
+#form-carousel {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #ebc9bb;
+}
